@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS switch</title>
+   
+</head>
+<body>
+    FNamae: <input type="text" id="fname"> <br>
+     LNamae: <input type="text" id="lname"><br>
+     <input type="submit" value="greet" id="greet" onclick="greet()">
+     <h1 id="h1"></h1>
+     <script>
+        function greet()
+        {
+            objfname=document.getElementById("fname");
+            objlname=document.getElementById("lname");
+            document.getElementById("h1").innerText="Hello " + objfname.value + " " + objlname.value;
+        }
+
+     </script>
+
+    
+   
+       
+                                                
+   
+    
+</body>
+</html>

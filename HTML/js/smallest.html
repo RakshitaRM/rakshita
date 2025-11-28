@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smallest num</title>
+</head>
+<body>
+    first num: <input type="number" id="fnum"> <br>
+    second num: <input type="text" id="snum"> <br>
+    third num: <input type="text" id="tnum"> <br>
+    <input type="submit" value=" Find smallest" id="smallest" onclick="smallest()">
+    smallest num: <input type="text">
+
+    <script>
+        function smallest()
+        {
+            objfnum=document.getElementById("fnum");
+            objsnum=document.getElementById("snum");
+            objtnum=document.getElementById("tnum");
+
+            if((objfnum.value<objsnum.value) && (objfnum.value<objtnum.value))
+            {
+               document.write("first num is smallest + objfnum.value+");
+            }
+            else if((objsnum.value<objfnum.value) && (objsnum.value<objtnum.value))
+            {
+               document.write("second num is smallest");
+            }
+            else
+            {
+                 document.write("third num is smallest");
+            }
+        }
+    </script>
+</body>
+</html>
